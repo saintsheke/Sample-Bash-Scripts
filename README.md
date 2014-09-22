@@ -1,6 +1,6 @@
-Sample-Bash-Scripts
+Bash Starter notes
 ===================
 
-Sample Bash scripts for beginners :)
+Sample Notes and Bash scripts for beginners :)
 
-You can feel free adding new simple scripts in the repo! 
+

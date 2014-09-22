@@ -1,0 +1,20 @@
+Quick notes about if Statments
+
+
+if [expressions]   # expression can have one brackets or
+if [[expressions]] # extended brackets or
+if ((expression))  # for integer comparison
+if expressions
+
+-------------------------------------
+if [expressions]; then  # One line with then
+
+if [expressions]   # You can put "then" on a different line
+then 
+	echo "true"
+else
+	echo "false"
+elif expression2; then  # additional evaluation in an if block code
+	echo "more"
+fi
+------------------------------------------

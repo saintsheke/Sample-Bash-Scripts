@@ -1,0 +1,59 @@
+# While i (which is 0) is still 10, do some command etc
+
+i=0    
+while [ $i -le 10 ]; do
+	echo i:$i
+	((i+=1))
+done
+
+# Until j (which is set as 0) reaches 10, so some command etc
+
+j=0
+until [ $j -ge 10 ]; do
+	echo j:$j
+	((j+1))
+done
+
+# For loop, for every item do something
+for i in 1 2 3 
+do 
+	echo $i
+done
+
+# For item in the range 1 to 10, do something
+for i in {1..10}
+do 
+	echo $i
+done
+
+# For item  (i is 1, but i is  less or equal to 10, increment i till 10)
+for (( i=1; i<=10; i++))
+do 
+	echo $i
+done 
+
+# for each item in an array, do something
+arry=("John" "Troon" "Ombagi")
+for i in ${arry[@]}
+do 
+	echo $i
+done
+
+
+# for each item in an associative array, do something
+
+declare -A  arr
+arr["name"]="John Troon"
+arry["twitter"]="@johntroony"
+for i in "${!arr[@]}"
+do
+	echo "$i: ${arr[$i]}"
+done
+
+#for items from a command substitution, do something
+
+for i in $(ls)
+do 
+	echo "$i"
+done
+

@@ -1,0 +1,11 @@
+# LOGICAL OPERATORS
+
+logical AND		[[ $a && $b ]]
+logical OR 		[[ $a || $b ]]
+logical NOT 		[[  ! $a ]] 
+
+# STRING NULL VALUE
+
+is Null ?		[[ -z $a ]]
+is not Null?	[[ -n $a ]]
+

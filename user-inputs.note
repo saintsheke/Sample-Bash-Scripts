@@ -1,0 +1,29 @@
+echo "What is your name?"
+read name
+
+echo "What is your password?"
+read -s pass
+
+read -p "What is your favorite animal? " animal
+
+echo name: $name, pass: $pass, animal: $animal
+
+###############################
+
+select animal in "cat" "dog" "bird" "fish"
+do
+	echo "You selected $animal"
+	break
+done
+
+###############################
+
+select option in "cat" "dog" "quit"
+do
+	case $option in
+		cat) echo "Cats like to sleep";;
+		dog) echo "Dogs like to play catch.";;
+		quit) break;;
+		*) echo " What's that dummy?";;
+	esac
+done

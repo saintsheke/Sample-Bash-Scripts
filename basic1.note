@@ -1,0 +1,22 @@
+# Adding attributes to variable
+
+declare -i d=123   # d is an integer
+declare -r e=232  # e is read-only
+declare -l f="LoLCats" # f is lolcats
+declare -u g="lolcats" # g is LOLCATS
+
+# Built in varibles
+
+echo $PWD
+echo $HOSTNAME
+echo $BASH_VERSION
+echo $SECONDS
+echo $MACHTYPE
+echo $0 (name of script)
+
+
+# COMMAND SUBSTITUTION
+
+a = $(ping -c localhost | grep -i "bytes from" | cut -d = -f 4)
+echo "the ping was $a"
+

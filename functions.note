@@ -1,0 +1,30 @@
+# Notes on functions, try them-out 
+function hello {
+	echo "Hello world!!"
+}
+
+echo "Intro to the world..."
+hello
+----------------
+
+function hello2 {
+	echo "Hi there $1 !"
+}
+
+echo "About to greet you..."
+hello2 Troon
+
+###########################
+
+function numberItems {
+        i=1
+        for f in $@; do  # $@ is all the  arguments parsed into the function
+                echo $i: $f
+                ((i++))
+        done
+}
+
+numberItems $(ls)
+echo
+
+numberItems Kenya Uganda Tanzania Ethiopia

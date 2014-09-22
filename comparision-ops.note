@@ -1,0 +1,16 @@
+					STRINGS			INTEGERS
+Less than 			[[ $a < $b ]]		[[ $a -lt $b ]]
+Greater than 			[[ $a > $b ]]		[[ $a -gt $b ]]
+Less than or equal to 		[[ $a <= $b ]]		[[ $a -le $b ]]
+Greater than or equal to	[[ $a >= $b ]]		[[ $a -ge $b ]]
+Equal				[[ $a == $b ]]		[[ $a -eq $b ]]
+Not Equal			[[ $a != $b ]] 		[[ $a -ne $b ]]
+
+returns 1 or 0 
+1 is true
+0 is false
+
+########## Example 
+[[ "Cat" == "dog" ]]
+echo $?
+

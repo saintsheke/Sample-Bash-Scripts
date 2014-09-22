@@ -1,0 +1,16 @@
+cat << EndOfText
+		one
+		two
+		three
+EndOfText
+
+##############################
+
+ftp -n << Donehere
+	open ftp.linux.org
+	user anonymous nopass
+	ascii
+	cd kernel
+	get 3.15.kernel.tar
+Donehere
+
